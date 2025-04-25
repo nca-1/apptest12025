@@ -1,0 +1,43 @@
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../styles/landingStyle.css"></link>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="scoreBox">
+<img src="../images/streakIMG.png" style="margin: 5px; height: 30px; width: 30px;">
+<p id="streakNumber"></p>
+<img src="../images/sleepCoinIMG.PNG" style="margin: 5px; height: 30px; width: 30px;">
+<p id="points"></p>
+<img src="../images/logo.PNG" style="position: absolute; margin-bottom: 5px; right: 0; height: 60px; width 60px;">
+
+</div>
+
+<h1>Resources</h1>
+<h3>Personal Techniques</h3>
+<p>List resources here</p>
+<h3>More Information</h3> 
+<p>List resources here</p>
+<h3>Helplines</h3>
+<p>List resources here</p>
+<h2>Contact Us</h2>
+<p>List socials again</p>
+
+<div class="bottomBar">
+<a href="landingPage.html"><img src="../images/homeButton.png" style="height: 40px; width: 40px;"></a>
+<a href="tutorial.html"><img src="../images/helpButton.png" style="height: 30px; width: 30px;"></a>
+</div>
+<script>
+window.points = parseInt(localStorage.getItem("points")) || 0;
+const pointsDisplay = document.getElementById("points");
+pointsDisplay.textContent = window.points;
+
+window.streakNumber = parseInt(localStorage.getItem("streakNumber")) || 0;
+const streakDisplay = document.getElementById("streakNumber");
+streakDisplay.textContent = window.streakNumber;
+</script>
+</body>
